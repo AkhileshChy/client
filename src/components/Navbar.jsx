@@ -24,7 +24,7 @@ const Navbar = (props) => {
     <div className="flex md:flex-row flex-col-reverse justify-between items-center mb-[35px] gap-6">
       {/* Logo with Project Name */}
       <div className="flex items-center">
-        <div className="text-[#1dc071] text-[32px] font-bold animate-logo">MEDFUND</div>
+        <div className="text-[#1dc071] text-[32px] font-bold animate-logo">GITFUND</div>
         <img src={logo} alt="logo" className="ml-2 w-[40px] h-[40px] object-contain" />
       </div>
 

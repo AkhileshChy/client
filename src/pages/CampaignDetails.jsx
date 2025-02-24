@@ -38,6 +38,25 @@ const CampaignDetails = () => {
 
   const handleDonate = async () => {
     if (!amount) return alert("Please enter amount to donate");
+    const donationData = {
+      ...state,
+      amount,
+      timestamp: new Date().toISOString(),
+    };
+  
+    const jsonString = JSON.stringify(donationData, null, 2);
+    const blob = new Blob([jsonString], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+  
+    // Create a download link and trigger download
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = `donation_${state.pId}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
     setIsLoading(true);
     await donate(state.pId, amount);
     navigate("/");

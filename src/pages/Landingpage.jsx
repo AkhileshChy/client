@@ -7,7 +7,7 @@ const LandingPage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-purple-900 via-black to-gray-900 text-white p-8">
       <h1 className="text-5xl sm:text-6xl font-bold text-center mb-8">
-        Welcome to MEDFUND
+        Welcome to GITFUND
       </h1>
       <p className="text-lg sm:text-xl mb-12 text-center max-w-2xl">
         Create, manage, and track campaigns effortlessly. Empower your ideas and make an impact today.
@@ -36,8 +36,8 @@ const LandingPage = () => {
           <p>Monitor your campaign's progress with detailed insights.</p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold mb-4">Stay Updated</h2>
-          <p>Follow the latest news to stay informed and inspired.</p>
+          <h2 className="text-xl font-semibold mb-4">Take Charge</h2>
+          <p>Have the power of voting to drive the campaign towards success</p>
         </div>
       </div>
     </div>
