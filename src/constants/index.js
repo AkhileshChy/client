@@ -24,15 +24,20 @@ export const navlinks = [
     //     disabled: true,
     // },
     {
-        name: 'investments',
-        imgUrl: menu,
-        link: '/investments',
-    },
-    {
         name: 'profile',
         imgUrl: profile,
         link: '/profile',
     },
+    {
+        name: 'investments',
+        imgUrl: withdraw,
+        link: '/investments',
+    },
+    // {
+    //     name: 'proposals',
+    //     imgUrl: ,
+    //     link: '/proposals',
+    // },
     // {
     //     name: 'logout',
     //     imgUrl: logout,

@@ -6,6 +6,8 @@ import { Navbar, Sidebar } from "./components";
 import News from "./pages/News";
 import LandingPage from "./pages/Landingpage";
 import InvestedStartups from "./pages/InvestedStartups";
+import Proposals from "./pages/proposals";
+import ProposalDetails from "./pages/ProposalDetails";
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/create-campaign" element={<CreateCampaign />} />
           <Route path="/investments" element={<InvestedStartups />} />
+          <Route path="/proposals" element={<Proposals />} />
+          <Route path="/proposal/:id" element={<ProposalDetails />} />
           <Route path="/campaign-details/:id" element={<CampaignDetails />} />
           <Route path="/campaign-details/:id" element={<CampaignDetails />} />
           <Route path="/news" element={<News />} />
